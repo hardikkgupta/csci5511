@@ -13,7 +13,7 @@ This list will numerate all the concepts learned in the course.
 - **Informed Search Algorithms**: Heuristics and its validity, Greedy best-first search and A* Search
 
 ### Projects
-[Eight Puzzle](https://github.com/hardikkgupta/csci5511/tree/main/eight%20puzzle)
+- [Eight Puzzle](https://github.com/hardikkgupta/csci5511/tree/main/eight%20puzzle)
 
 ## 2. Search in Complex Environments
 - Local Search and Optimaization
@@ -24,7 +24,7 @@ This list will numerate all the concepts learned in the course.
 - Online Search
 
 ### Projects
-[Scheduling](https://github.com/hardikkgupta/csci5511/tree/main/scheduling)
+- [Scheduling](https://github.com/hardikkgupta/csci5511/tree/main/scheduling)
 
 ## 3. Adversarial Search and Games
 - Two-player sum game and Optimal Decision in games
@@ -34,7 +34,7 @@ This list will numerate all the concepts learned in the course.
 - Partially Observable Games
 
 ### Projects
-[Rand Othello](https://github.com/hardikkgupta/csci5511/tree/main/randothello)
+- [Rand Othello](https://github.com/hardikkgupta/csci5511/tree/main/randothello)
 
 ## 4. Constraint Satisfaction
 - Definition of the Problem
@@ -47,8 +47,8 @@ This list will numerate all the concepts learned in the course.
 - Propostional Logical and Theorem
 
 ### Projects
-[Basic Logic](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/basic)
-[Clue Reasoner](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/clue%20reasoner)
+- [Basic Logic](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/basic)
+- [Clue Reasoner](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/clue%20reasoner)
 
 ## 6. First-Order Logic
 
