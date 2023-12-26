@@ -25,3 +25,13 @@ This list will numerate all the concepts learned in the course.
 
 ### Projects
 [Scheduling](https://github.com/hardikkgupta/csci5511/tree/main/scheduling)
+
+## 3. Adversarial Search and Games
+- Two-player sum game and Optimal Decision in games
+- Minimax Algorithm, Optimal Decision in Multiplayer, Alpha-Beta Pruning and Move Ordering
+- Heuristic Alpha-Beta Tree Search
+- Stochastic Games
+- Partially Observable Games
+
+### Projects
+[Rand Othello](https://github.com/hardikkgupta/csci5511/tree/main/randothello)
