@@ -51,4 +51,8 @@ This list will numerate all the concepts learned in the course.
 - [Clue Reasoner](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/clue%20reasoner)
 
 ## 6. First-Order Logic
+- Syntax and Semantics of First-Order Logic
+- Examples of use of First-Order Logic
 
+### Projects
+- [First Order Logic using Prolog](https://github.com/hardikkgupta/csci5511/tree/main/prolog)
