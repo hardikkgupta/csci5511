@@ -53,3 +53,25 @@ Your program should be runnable from the command line and accept exactly one com
 For which the solution is: Up, Right
 
 Your program should then solve from this given state using breadth-first, iterative deepening, A* with num_wrong_tiles, and A* with manhattan_distance, reporting its answer and time taken for each. 
+
+## How to Run
+Run this using python3 eight_puzzle.py <Initial_State>
+Initial State = 120843765 where 0 represents blank <br>
+### Sample Input
+```python3 eight_puzzle.py 120843765```
+
+### Sample Output
+```
+| 1 | 2 | 0 |
+| 8 | 4 | 3 |
+| 7 | 6 | 5 |
+
+['U', 'R']
+BFS took 0.000061273574829
+['U', 'R']
+IDDFS took 0.000056028366089
+['U', 'R']
+A* using num_wrong_tiles took 0.000068902969360
+['U', 'R']
+A* using manhattan_distance took 0.000097036361694
+```
