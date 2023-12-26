@@ -56,3 +56,9 @@ This list will numerate all the concepts learned in the course.
 
 ### Projects
 - [First Order Logic using Prolog](https://github.com/hardikkgupta/csci5511/tree/main/prolog)
+
+## 7. Automated Planning
+- Definition of Classical Planning
+- **Algorithms** for Classical Planning: Forward-state space search, Backward search, Planning as Boolean Satisfiability
+- Heuristics for Planning
+- Hierarchical Planning
