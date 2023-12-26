@@ -9,4 +9,8 @@ This list will numerate all the concepts learned in the course.
 - Different Types of Agents and Environments
 - Different Structure of Agents
 - Formulation of Searching Problems
-- **Search Algorithms**: Best-Fit Search, Breadth-First Search, Dijkstra's (Uniform Cost) Search, Depth-Fi
+- **Uniformed Search Algorithms**: Best-Fit Search, Breadth-First Search, Dijkstra's (Uniform-Cost) Search, Depth-First Search and its limitations
+- **Informed Search Algorithms**: Heuristics and its validity, Greedy best-first search and A* Search
+
+### Projects
+[Eight Puzzle](https://github.com/hardikkgupta/csci5511/tree/main/eight%20puzzle)
