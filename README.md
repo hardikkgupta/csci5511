@@ -35,3 +35,20 @@ This list will numerate all the concepts learned in the course.
 
 ### Projects
 [Rand Othello](https://github.com/hardikkgupta/csci5511/tree/main/randothello)
+
+## 4. Constraint Satisfaction
+- Definition of the Problem
+- Constraint Propagation
+- Backtracking Search for CSPs
+- Local Search
+
+## 5. Logical Agents
+- Knowledge-Based Agent
+- Propostional Logical and Theorem
+
+### Projects
+[Basic Logic](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/basic)
+[Clue Reasoner](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/clue%20reasoner)
+
+## 6. First-Order Logic
+
