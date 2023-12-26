@@ -48,6 +48,7 @@ This list will numerate all the concepts learned in the course.
 
 ### Projects
 [Basic Logic](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/basic)
+
 [Clue Reasoner](https://github.com/hardikkgupta/csci5511/tree/main/proplogic/clue%20reasoner)
 
 ## 6. First-Order Logic
