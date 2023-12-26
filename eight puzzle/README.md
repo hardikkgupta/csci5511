@@ -55,7 +55,7 @@ For which the solution is: Up, Right
 Your program should then solve from this given state using breadth-first, iterative deepening, A* with num_wrong_tiles, and A* with manhattan_distance, reporting its answer and time taken for each. 
 
 ## How to Run
-Run this using python3 eight_puzzle.py <Initial_State>
+Run this using python3 eight_puzzle.py <Initial_State> <br>
 Initial State = 120843765 where 0 represents blank <br>
 ### Sample Input
 ```python3 eight_puzzle.py 120843765```
