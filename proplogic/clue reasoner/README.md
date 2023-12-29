@@ -99,3 +99,111 @@ The code comes with three sample games. (Technically two separate games, but one
 The sample games call the print_notepad method near the end to show what information that we have. If you have implemented your methods correctly, the SAT Solver should be able to reason out enough information to answer the question of what exactly is in the Case File.
 
 But beware! SAT is an NP-Complete problem and we're solving it twice for each variable that we have in order to generate the notepad. So if you didn't add all the clauses correctly, it might take a really long time to generate the notepad. In my solution, it takes about 20 seconds to generate the notepad. But before I had all the clauses in there properly, it tended to get stuck on some of the notepad items. So when you're testing, you may want to rewrite the print_notepad method to focus on one row or column.
+
+## How to Run
+### Sample Input
+```
+python3 clue_game_reasoner.py 
+```
+
+### Sample Output
+```
+OUPUT OF GAME 1
+Before accusation: should show a single solution.
+Clue Game Notepad:
+        SC      MU      WH      GR      PE      PL      CF
+mu      N       N       N       N       N       Y       N
+pl      N       Y       N       N       N       N       N
+gr      N       N       Y       N       N       N       N
+pe      N       N       N       N       N       N       Y
+sc      N       Y       N       N       N       N       N
+wh      Y       N       N       N       N       N       N
+kn      N       N       Y       N       N       N       N
+ca      N       N       N       Y       N       N       N
+re      N       N       N       N       Y       N       N
+ro      N       N       Y       N       N       N       N
+pi      N       N       N       N       N       N       Y
+wr      N       N       N       Y       N       N       N
+ha      N       N       N       N       Y       N       N
+lo      N       Y       N       N       N       N       N
+di      N       N       N       N       Y       N       N
+ki      N       N       N       Y       N       N       N
+ba      N       N       N       N       N       Y       N
+co      N       N       N       N       N       Y       N
+bi      N       N       N       N       N       N       Y
+li      Y       N       N       N       N       N       N
+st      Y       N       N       N       N       N       N
+
+After accusation: if consistent, output should remain unchanged.
+Clue Game Notepad:
+        SC      MU      WH      GR      PE      PL      CF
+mu      N       N       N       N       N       Y       N
+pl      N       Y       N       N       N       N       N
+gr      N       N       Y       N       N       N       N
+pe      N       N       N       N       N       N       Y
+sc      N       Y       N       N       N       N       N
+wh      Y       N       N       N       N       N       N
+kn      N       N       Y       N       N       N       N
+ca      N       N       N       Y       N       N       N
+re      N       N       N       N       Y       N       N
+ro      N       N       Y       N       N       N       N
+pi      N       N       N       N       N       N       Y
+wr      N       N       N       Y       N       N       N
+ha      N       N       N       N       Y       N       N
+lo      N       Y       N       N       N       N       N
+di      N       N       N       N       Y       N       N
+ki      N       N       N       Y       N       N       N
+ba      N       N       N       N       N       Y       N
+co      N       N       N       N       N       Y       N
+bi      N       N       N       N       N       N       Y
+li      Y       N       N       N       N       N       N
+st      Y       N       N       N       N       N       N
+OUPUT OF GAME 2
+Clue Game Notepad:
+        SC      MU      WH      GR      PE      PL      CF
+mu      N       N       N       N       Y       N       N
+pl      N       N       N       N       N       Y       N
+gr      Y       N       N       N       N       N       N
+pe      N       N       N       N       N       N       Y
+sc      N       N       N       N       Y       N       N
+wh      -       -       -       -       -       -       N
+kn      N       N       Y       N       N       N       N
+ca      Y       N       N       N       N       N       N
+re      N       N       N       Y       N       N       N
+ro      N       N       Y       N       N       N       N
+pi      -       -       N       N       -       -       N
+wr      N       N       N       N       N       N       Y
+ha      Y       N       N       N       N       N       N
+lo      N       N       N       N       N       Y       N
+di      N       N       N       N       N       N       Y
+ki      N       N       Y       N       N       N       N
+ba      N       N       N       N       Y       N       N
+co      N       N       N       Y       N       N       N
+bi      -       -       -       -       -       -       N
+li      N       N       N       N       N       Y       N
+st      N       Y       N       N       N       N       N
+OUPUT OF GAME 3
+Clue Game Notepad:
+        SC      MU      WH      GR      PE      PL      CF
+mu      N       N       N       N       Y       N       N
+pl      N       N       N       N       N       Y       N
+gr      Y       N       N       N       N       N       N
+pe      N       N       N       N       N       N       Y
+sc      N       N       N       N       Y       N       N
+wh      -       -       -       -       -       -       N
+kn      N       N       Y       N       N       N       N
+ca      -       -       N       N       N       N       N
+re      N       N       N       Y       N       N       N
+ro      -       N       -       -       -       -       N
+pi      -       -       N       N       -       -       N
+wr      N       N       N       N       N       N       Y
+ha      -       N       -       N       N       N       -
+lo      N       N       N       N       N       Y       N
+di      -       -       N       N       -       -       -
+ki      N       N       Y       N       N       N       N
+ba      N       N       N       N       Y       N       N
+co      N       N       N       Y       N       N       N
+bi      -       -       -       -       -       -       -
+li      N       N       N       N       N       Y       N
+st      N       Y       N       N       N       N       N
+```
