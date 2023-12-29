@@ -16,8 +16,8 @@ The domain of each variable is the set of possible words it can take from the gi
 ### Constraint
 _Unary constraints_ on each variable are given by the length of the word.
 Binary constraints arise from the overlap between neighboring variables. Overlap is represented as a pair of indices (i, j) indicating that the ith character of one variable must be the same as the jth character of another variable. All words must be different; the same word should not be repeated in the puzzle.
-Ob jective
+### Objective
 Find a satisfying assignment, i.e., a different word for each variable such that all unary and binary constraints are met.
 Approach
-Enforce Node Consistency: Ensure that every value in a variable’s domain satisfies its unary constraints (length).
-Enforce Arc Consistency (AC3): Ensure that binary constraints (overlaps) are satisfied. Backtracking: Use backtracking to explore possible assignments until a solution is found.
+_Enforce Node Consistency_: Ensure that every value in a variable’s domain satisfies its unary constraints (length)._
+_Enforce Arc Consistency (AC3)_: Ensure that binary constraints (overlaps) are satisfied. Backtracking: Use backtracking to explore possible assignments until a solution is found.
