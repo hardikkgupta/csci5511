@@ -66,4 +66,4 @@ This list will numerate all the concepts learned in the course.
 # Final Project
 
 ## Crossword using Constraint Satisfaction
-[Crossword](https://github.com/hardikkgupta/csci5511/tree/main/crossword)
+- [Crossword](https://github.com/hardikkgupta/csci5511/tree/main/crossword)
