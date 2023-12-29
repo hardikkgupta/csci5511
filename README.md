@@ -34,7 +34,7 @@ This list will numerate all the concepts learned in the course.
 - Partially Observable Games
 
 ### Projects
-- [Rand Othello](https://github.com/hardikkgupta/csci5511/tree/main/randothello)
+- [Rand Othello](https://github.com/hardikkgupta/csci5511/tree/main/othello)
 
 ## 4. Constraint Satisfaction
 - Definition of the Problem
