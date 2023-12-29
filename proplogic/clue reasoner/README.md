@@ -78,16 +78,14 @@ Add code to the suggest method that will handle all of these scenarios, create c
 
 The list self.players contains the turn order of the players in the game.
 
- 
-
-accuse
+## ```accuse``` <br>
 The last way that we can learn knowledge is when someone makes an accusation. (Technically, an accusation either ends the game or results in the accuser losing the game, but we will ignore this aspect and only focus on the information gained.)
 
 An accusation is when a player tries to win the game by naming the three cards in the Case File. They name three cards and then look in the Case File. If they are correct, they win the game. If they are not, they can no longer win but must remain in the game to refute suggestions.
 
 Add code to the accuse function that will create clauses based on information gained by a player's accusation and add them to our KB.
 
-Testing
+## Testing
 The code comes with three sample games. (Technically two separate games, but one of them is shown from the perspective of two different players.) We played games and tracked each suggestion.
 
 The sample games call the print_notepad method near the end to show what information that we have. If you have implemented your methods correctly, the SAT Solver should be able to reason out enough information to answer the question of what exactly is in the Case File.
