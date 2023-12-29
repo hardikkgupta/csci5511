@@ -35,4 +35,279 @@ Finally, create an **AlphabetaPlayer** class that implements minimax search with
 ## Output and Submission
 Set up your code so that by default it plays your AlphabetaPlayer (with a reasonable depth limit that doesn't take too long) against RandomPlayer, then swaps colors and does it again.
 
-## How to 
+## How to Run
+### Sample Input
+```
+python3 randothello.py
+```
+### Sample Output
+```
+AlphaBeta is Black and RandomPlayer is White
+Legal moves are [(2, 3), (3, 2), (4, 5), (5, 4)]
+White Action,  (2, 3)
+Legal moves are [(2, 2), (2, 4), (4, 2)]
+Black Action,  (2, 2)
+Legal moves are [(2, 1), (3, 2), (4, 5), (5, 4)]
+White Action,  (2, 1)
+Legal moves are [(1, 1), (1, 3), (2, 4), (3, 5), (4, 2), (5, 3)]
+Black Action,  (4, 2)
+Legal moves are [(3, 2), (5, 2), (5, 3), (5, 4), (5, 5)]
+White Action,  (5, 4)
+Legal moves are [(1, 1), (1, 3), (2, 5), (3, 5), (4, 5), (5, 5), (6, 5)]
+Black Action,  (5, 5)
+Legal moves are [(3, 2), (5, 2), (5, 3), (5, 6), (6, 6)]
+White Action,  (6, 6)
+Legal moves are [(1, 3), (2, 4), (2, 5), (4, 5), (6, 5)]
+Black Action,  (1, 3)
+Legal moves are [(0, 4), (1, 2), (2, 4), (3, 2), (4, 1), (5, 2)]
+White Action,  (0, 4)
+Legal moves are [(0, 3), (1, 1), (2, 0), (2, 5), (3, 5), (4, 5), (6, 5), (7, 7)]
+Black Action,  (0, 3)
+Legal moves are [(0, 2), (1, 2), (2, 4), (3, 2), (4, 1), (5, 2)]
+White Action,  (0, 2)
+Legal moves are [(1, 1), (2, 0), (2, 5), (3, 1), (3, 5), (4, 5), (6, 5), (7, 7)]
+Black Action,  (2, 5)
+Legal moves are [(2, 4), (3, 2), (4, 1), (5, 3)]
+White Action,  (5, 3)
+Legal moves are [(1, 2), (2, 4), (3, 2), (4, 5), (5, 2), (6, 4)]
+Black Action,  (1, 2)
+Legal moves are [(1, 1), (1, 6), (2, 4), (3, 1), (3, 5), (4, 1), (5, 1)]
+White Action,  (4, 1)
+Legal moves are [(1, 4), (2, 0), (3, 0), (3, 2), (5, 2), (6, 3), (6, 4)]
+Black Action,  (3, 0)
+Legal moves are [(1, 1), (1, 6), (2, 0), (2, 4), (3, 5)]
+White Action,  (2, 4)
+Legal moves are [(1, 4), (3, 2), (4, 5), (5, 2)]
+Black Action,  (4, 5)
+Legal moves are [(1, 1), (1, 6), (2, 0), (2, 6), (3, 5), (3, 6), (4, 6)]
+White Action,  (3, 6)
+Legal moves are [(1, 4), (3, 2), (4, 7), (5, 2), (5, 6), (6, 3), (6, 4)]
+Black Action,  (6, 3)
+Legal moves are [(0, 1), (1, 1), (1, 4), (2, 0), (2, 6), (3, 2), (5, 2), (6, 2), (6, 4), (7, 2), (7, 3)]
+White Action,  (7, 3)
+Legal moves are [(1, 4), (3, 2), (4, 7), (5, 2), (5, 6), (6, 4)]
+Black Action,  (6, 4)
+Legal moves are [(0, 1), (1, 1), (1, 4), (1, 6), (2, 0), (2, 6), (3, 5), (6, 5), (7, 4), (7, 5)]
+White Action,  (3, 5)
+Legal moves are [(1, 4), (2, 7), (3, 1), (3, 2), (4, 6), (4, 7), (5, 2), (5, 6), (6, 2), (6, 5), (7, 2)]
+Black Action,  (5, 2)
+Legal moves are [(0, 1), (1, 1), (1, 4), (1, 5), (2, 0), (2, 6), (4, 0), (5, 1), (6, 2), (6, 5), (7, 4), (7, 5)]
+White Action,  (0, 1)
+Legal moves are [(1, 4), (2, 6), (2, 7), (3, 1), (3, 2), (4, 6), (4, 7), (5, 6), (6, 2), (6, 5), (7, 2), (7, 4)]
+Black Action,  (7, 2)
+Legal moves are [(1, 4), (1, 5), (2, 0), (2, 6), (4, 0), (5, 1), (6, 2), (7, 1), (7, 4), (7, 5)]
+White Action,  (5, 1)
+Legal moves are [(1, 4), (2, 7), (3, 1), (3, 2), (4, 6), (4, 7), (5, 6), (6, 1), (6, 5), (7, 4)]
+Black Action,  (7, 4)
+Legal moves are [(1, 4), (1, 5), (1, 6), (2, 0), (2, 6), (3, 1), (3, 2), (4, 0), (7, 5)]
+White Action,  (1, 5)
+Legal moves are [(1, 4), (1, 6), (2, 6), (2, 7), (3, 1), (3, 2), (4, 6), (5, 6), (6, 1), (6, 5)]
+Black Action,  (3, 1)
+Legal moves are [(1, 1), (2, 0), (3, 2), (4, 0), (6, 2)]
+White Action,  (1, 1)
+Legal moves are [(0, 6), (1, 4), (1, 6), (2, 0), (2, 6), (2, 7), (3, 2), (4, 0), (4, 6), (5, 0), (5, 6), (6, 0), (6, 1), (6, 2), (6, 5)]
+Black Action,  (6, 0)
+Legal moves are [(3, 2), (5, 0), (6, 1), (6, 2), (7, 5)]
+White Action,  (7, 5)
+Legal moves are [(0, 6), (1, 4), (1, 6), (2, 7), (3, 2), (4, 0), (4, 6), (5, 6), (6, 1), (6, 5), (7, 6)]
+Black Action,  (1, 4)
+Legal moves are [(0, 5), (3, 2), (5, 0), (6, 1), (6, 2), (7, 1)]
+White Action,  (3, 2)
+Legal moves are [(0, 6), (1, 0), (1, 6), (2, 0), (2, 6), (2, 7), (4, 6), (4, 7), (5, 0), (5, 6), (6, 1), (6, 5), (7, 6)]
+Black Action,  (1, 0)
+Legal moves are [(0, 5), (2, 0), (5, 0), (6, 1), (6, 2), (7, 1)]
+White Action,  (7, 1)
+Legal moves are [(0, 6), (1, 6), (2, 0), (2, 6), (2, 7), (4, 0), (4, 6), (4, 7), (5, 0), (5, 6), (6, 1), (6, 2), (6, 5), (7, 7)]
+Black Action,  (4, 6)
+Legal moves are [(0, 5), (2, 0), (2, 6), (4, 7), (5, 0), (5, 6), (5, 7), (6, 1), (6, 2)]
+White Action,  (2, 0)
+Legal moves are [(0, 5), (0, 6), (1, 6), (2, 6), (2, 7), (4, 0), (4, 7), (5, 0), (5, 6), (6, 1), (6, 2), (6, 5)]
+Black Action,  (5, 6)
+Legal moves are [(0, 5), (2, 6), (4, 0), (4, 7), (5, 7), (6, 1), (6, 2), (6, 5), (6, 7)]
+White Action,  (4, 7)
+Legal moves are [(0, 5), (0, 6), (1, 6), (2, 6), (2, 7), (4, 0), (5, 0), (5, 7), (6, 5), (7, 6), (7, 7)]
+Black Action,  (1, 6)
+Legal moves are [(0, 5), (0, 6), (0, 7), (1, 7), (2, 6), (4, 0), (6, 1), (6, 2), (6, 5), (6, 7)]
+White Action,  (0, 7)
+Legal moves are [(1, 7), (2, 6), (2, 7), (4, 0), (5, 0), (5, 7), (6, 5), (7, 6), (7, 7)]
+Black Action,  (5, 7)
+Legal moves are [(0, 5), (0, 6), (2, 6), (4, 0), (6, 1), (6, 2), (6, 5), (6, 7)]
+White Action,  (6, 1)
+Legal moves are [(1, 7), (2, 6), (2, 7), (4, 0), (5, 0), (6, 2), (6, 5), (7, 6), (7, 7)]
+Black Action,  (5, 0)
+Legal moves are [(0, 5), (0, 6), (2, 6), (4, 0), (6, 2), (6, 5), (6, 7)]
+White Action,  (6, 2)
+Legal moves are [(1, 7), (2, 6), (2, 7), (4, 0), (6, 5), (7, 6), (7, 7)]
+Black Action,  (1, 7)
+Legal moves are [(0, 5), (0, 6), (2, 6), (2, 7), (4, 0), (6, 5), (6, 7)]
+White Action,  (4, 0)
+Legal moves are [(2, 6), (2, 7), (6, 5), (7, 0), (7, 6), (7, 7)]
+Black Action,  (2, 7)
+Legal moves are [(0, 5), (0, 6), (2, 6), (6, 5), (6, 7), (7, 0)]
+White Action,  (7, 0)
+Legal moves are [(2, 6), (7, 6), (7, 7)]
+Black Action,  (2, 6)
+Legal moves are [(0, 5), (0, 6), (6, 5), (6, 7)]
+White Action,  (0, 5)
+Legal moves are [(7, 6), (7, 7)]
+Black Action,  (7, 7)
+Legal moves are [(0, 6), (6, 5), (6, 7)]
+White Action,  (0, 6)
+Legal moves are ['SKIP']
+Black Action,  SKIP
+Legal moves are [(6, 5), (6, 7), (7, 6)]
+White Action,  (6, 7)
+Legal moves are ['SKIP']
+Black Action,  SKIP
+Legal moves are [(6, 5), (7, 6)]
+White Action,  (6, 5)
+Legal moves are [(7, 6)]
+Black Action,  (7, 6)
+Game Over
+  01234567
+0 XWBBBBBB
+1 BBWBBBBB
+2 BWBWBBBB
+3 BWBBWBBB
+4 BBBBBWBB
+5 BBWWBBWB
+6 BWWWWWWW
+7 BWWXBBBW
+Black: 42
+White: 20
+Black wins
+AlphaBeta is White and RandomPlayer is Black
+Legal moves are [(2, 3), (3, 2), (4, 5), (5, 4)]
+White Action,  (4, 5)
+Legal moves are [(3, 5), (5, 3), (5, 5)]
+Black Action,  (3, 5)
+Legal moves are [(2, 2), (2, 3), (2, 4), (2, 5), (2, 6)]
+White Action,  (2, 2)
+Legal moves are [(3, 2), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6)]
+Black Action,  (3, 2)
+Legal moves are [(2, 1), (2, 3), (2, 4), (2, 5), (2, 6), (4, 2)]
+White Action,  (2, 1)
+Legal moves are [(1, 1), (3, 1), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6)]
+Black Action,  (1, 1)
+Legal moves are [(0, 0), (0, 1), (1, 2), (2, 3), (2, 4), (2, 5), (2, 6), (3, 6)]
+White Action,  (0, 1)
+Legal moves are [(0, 0), (2, 0), (3, 1), (4, 2), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6)]
+Black Action,  (0, 0)
+Legal moves are [(1, 2), (2, 3), (2, 4), (2, 5), (2, 6), (3, 6)]
+White Action,  (2, 3)
+Legal moves are [(0, 2), (3, 1), (5, 3), (5, 5)]
+Black Action,  (0, 2)
+Legal moves are [(2, 5), (2, 6), (3, 6)]
+White Action,  (3, 6)
+Legal moves are [(3, 1), (5, 5)]
+Black Action,  (3, 1)
+Legal moves are [(1, 0), (2, 0), (3, 0), (4, 0)]
+White Action,  (4, 0)
+Legal moves are [(2, 4), (4, 1), (5, 4), (5, 5)]
+Black Action,  (2, 4)
+Legal moves are [(1, 0), (1, 2), (1, 3), (1, 4), (1, 5)]
+White Action,  (1, 4)
+Legal moves are [(2, 5), (4, 1), (4, 2), (5, 4), (5, 5)]
+Black Action,  (2, 5)
+Legal moves are [(1, 0), (1, 2), (1, 3), (1, 5), (1, 6)]
+White Action,  (1, 0)
+Legal moves are [(0, 3), (0, 4), (0, 5), (2, 0), (4, 1), (4, 2), (4, 6), (4, 7), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6)]
+Black Action,  (0, 3)
+Legal moves are [(0, 4), (0, 5), (1, 2), (1, 3), (1, 5), (1, 6), (2, 6)]
+White Action,  (1, 6)
+Legal moves are [(2, 0), (2, 6), (4, 1), (4, 2), (4, 6), (4, 7), (5, 3), (5, 4), (5, 5), (5, 6)]
+Black Action,  (2, 0)
+Legal moves are [(0, 4), (0, 5), (1, 2), (1, 3), (1, 5)]
+White Action,  (0, 5)
+Legal moves are [(0, 4), (2, 6), (4, 1), (4, 2), (4, 6), (4, 7), (5, 4), (5, 5)]
+Black Action,  (4, 7)
+Legal moves are [(0, 4), (1, 2), (1, 3), (1, 5), (2, 6), (2, 7), (3, 7)]
+White Action,  (0, 4)
+Legal moves are [(0, 6), (0, 7), (3, 0), (4, 1), (4, 2), (5, 2), (5, 4), (5, 5)]
+Black Action,  (3, 0)
+Legal moves are [(1, 3), (1, 5), (2, 6), (2, 7), (4, 1), (4, 2), (4, 6)]
+White Action,  (4, 2)
+Legal moves are [(0, 6), (0, 7), (1, 2), (1, 3), (5, 0), (5, 2), (5, 3), (5, 4), (5, 5), (5, 6)]
+Black Action,  (5, 3)
+Legal moves are [(1, 3), (1, 5), (2, 6), (2, 7), (3, 7), (4, 1), (4, 6), (5, 1), (5, 4), (5, 5), (6, 3)]
+White Action,  (6, 3)
+Legal moves are [(0, 6), (0, 7), (1, 2), (1, 3), (1, 5), (4, 6), (5, 0), (5, 2), (5, 4), (5, 5), (5, 6), (6, 2), (6, 4)]
+Black Action,  (0, 7)
+Legal moves are [(1, 3), (1, 5), (2, 6), (2, 7), (3, 7), (4, 1), (4, 6), (5, 1), (5, 4), (5, 5)]
+White Action,  (2, 6)
+Legal moves are [(0, 6), (1, 2), (1, 5), (2, 7), (4, 6), (5, 0), (5, 2), (5, 4), (5, 5), (5, 6), (6, 4)]
+Black Action,  (0, 6)
+Legal moves are [(1, 3), (2, 7), (3, 7), (4, 1), (4, 6), (5, 1)]
+White Action,  (4, 6)
+Legal moves are [(1, 2), (1, 5), (2, 7), (3, 7), (5, 0), (5, 2), (5, 4), (5, 5), (5, 6), (6, 4)]
+Black Action,  (5, 0)
+Legal moves are [(4, 1), (5, 1)]
+White Action,  (5, 1)
+Legal moves are [(1, 2), (2, 7), (3, 7), (4, 1), (5, 2), (5, 4), (5, 5), (5, 6), (6, 2), (6, 4)]
+Black Action,  (2, 7)
+Legal moves are [(1, 2), (1, 3), (1, 5), (4, 1)]
+White Action,  (1, 3)
+Legal moves are [(1, 2), (3, 7), (4, 1), (5, 2), (5, 4), (5, 5), (5, 6), (5, 7), (6, 2), (6, 4), (7, 3)]
+Black Action,  (3, 7)
+Legal moves are [(1, 2), (1, 5), (4, 1)]
+White Action,  (1, 5)
+Legal moves are [(1, 2), (4, 1), (5, 2), (5, 4), (5, 5), (5, 6), (5, 7), (6, 2), (6, 4), (7, 3)]
+Black Action,  (1, 2)
+Legal moves are ['SKIP']
+White Action,  SKIP
+Legal moves are [(4, 1), (5, 2), (5, 4), (5, 5), (5, 6), (5, 7), (6, 2), (6, 4), (7, 3)]
+Black Action,  (5, 2)
+Legal moves are [(4, 1), (6, 1)]
+White Action,  (4, 1)
+Legal moves are [(5, 4), (5, 5), (5, 6), (5, 7), (6, 1), (6, 2), (6, 4), (7, 3), (7, 4)]
+Black Action,  (5, 7)
+Legal moves are [(6, 1)]
+White Action,  (6, 1)
+Legal moves are [(5, 4), (5, 5), (5, 6), (6, 2), (6, 4), (7, 0), (7, 1), (7, 2), (7, 3), (7, 4)]
+Black Action,  (5, 4)
+Legal moves are [(5, 5), (6, 2), (6, 4)]
+White Action,  (6, 2)
+Legal moves are [(7, 0), (7, 1), (7, 2), (7, 3), (7, 4)]
+Black Action,  (7, 0)
+Legal moves are [(5, 5), (6, 4), (7, 1)]
+White Action,  (6, 4)
+Legal moves are [(6, 5), (7, 1), (7, 2), (7, 3), (7, 4), (7, 5)]
+Black Action,  (6, 5)
+Legal moves are [(5, 5), (7, 1), (7, 2), (7, 3), (7, 4), (7, 5)]
+White Action,  (7, 1)
+Legal moves are [(7, 2), (7, 3)]
+Black Action,  (7, 2)
+Legal moves are [(5, 5), (7, 3), (7, 4), (7, 5)]
+White Action,  (7, 3)
+Legal moves are [(7, 4)]
+Black Action,  (7, 4)
+Legal moves are [(5, 5), (6, 6), (7, 5)]
+White Action,  (7, 5)
+Legal moves are [(5, 5), (7, 6)]
+Black Action,  (5, 5)
+Legal moves are [(5, 6), (6, 6)]
+White Action,  (5, 6)
+Legal moves are [(6, 6), (6, 7), (7, 6)]
+Black Action,  (6, 7)
+Legal moves are [(6, 6), (7, 6)]
+White Action,  (7, 6)
+Legal moves are [(6, 6), (7, 7)]
+Black Action,  (7, 7)
+Legal moves are ['SKIP']
+White Action,  SKIP
+Legal moves are [(6, 6)]
+Black Action,  (6, 6)
+Game Over
+  01234567
+0 WWWWWWXW
+1 WWWWBBWW
+2 WWWWBWBW
+3 WWWBWBWW
+4 WWWWWBWW
+5 WWBWWWWW
+6 WWWWWWWW
+7 WXWWWWWW
+Black: 8
+White: 54
+White wins
+```
