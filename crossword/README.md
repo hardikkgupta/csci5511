@@ -19,5 +19,5 @@ Binary constraints arise from the overlap between neighboring variables. Overlap
 ### Objective
 Find a satisfying assignment, i.e., a different word for each variable such that all unary and binary constraints are met.
 Approach
-_Enforce Node Consistency_: Ensure that every value in a variable’s domain satisfies its unary constraints (length)._
+_Enforce Node Consistency_: Ensure that every value in a variable’s domain satisfies its unary constraints (length).
 _Enforce Arc Consistency (AC3)_: Ensure that binary constraints (overlaps) are satisfied. Backtracking: Use backtracking to explore possible assignments until a solution is found.
