@@ -27,21 +27,21 @@ Amy is making the claim that Bob is not a truth-teller. If Amy is a truth-teller
 
 A ↔ B
 
-Similarly, the second and third sequences can be encoded as
+Similarly, the second and third sequences can be encoded as <br>
 B ↔ ~C
 
-and
+and <br>
 C ↔ (~A Ʌ ~B)
 
 Next, we'll need to convert this to conjunctive normal form. After some work, you would get the following clauses:
 
-~A V ~B
-B V A
-~B V ~C
-C V B
-~C V ~A
-~C V ~B
-A V B V C
+~A V ~B <br>
+B V A <br>
+~B V ~C <br>
+C V B <br>
+~C V ~A <br>
+~C V ~B <br>
+A V B V C <br>
 
 To represent this information in our python sat interface, you would create a list of strings, with each string representing a separate clause, "or" symbols left as spaces, and "not" symbols replaced with "~", as follows:
 
