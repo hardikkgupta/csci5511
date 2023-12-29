@@ -56,4 +56,52 @@ _consistent_: Return True if assignment is consistent (i.e., words fit in crossw
 _order domain values_: Return a list of values in the domain of var, in order by the number of values they rule out for neighboring variables. The first value in the list, for example, should be the one that rules out the fewest values among the neighbors of var. <br>
 _unassigned variable_: Return an unassigned variable not already part of assignment. Choose the variable with the minimum number of remaining values in its domain. If there is a tie, choose the variable with the highest degree. If there is a tie, any of the tied variables are acceptable return values. <br>
 _backtrack_: Using Backtracking Search, take as input a partial assignment for the crossword and return a complete assignment if possible to do so. assignment is a mapping from variables (keys) to words (values). If no assignment is possible, return None.
+**Unlike games or adversarial search, there is no heuristic to test or compare.**
 
+_Note: The game is complex to implement, and every piece of the dataset is hard-implemented from the Washington Post. For code complexity, there is no method to compare or say that. Evaluation can only be done through the time period it took._
+
+## Results
+This shows the result from the [Washington Post’s crossword](https://www.washingtonpost.com/games/). I have collated the results from the easy, medium, and hard categories. Also, there are 4 file sets: `skeletonx.txt` and `dictionaryx.txt`. These are workable only with specific pairs, such as the `skeleton1.txt` will work with only dictionary1.txt. I have added time elapsed, where it measures the constraint satisfaction problem.
+### Sample Input:
+```
+python3 crossword.py data/diff.txt data/word_list.txt
+```
+### Sample Output:
+```
+SPEDUP-CHOPS-EQUATE--
+CLAIRE-HONES-NUTLOAF-
+AUSTINPOWERS-DIALOGUE
+MME--DORAL--SETH--LSD
+-PLATINUMBLONDE-GLESS
+---KINGS--ORA--MAE---
+INKING--LOUNGELIZARD-
+GOWN--OPENTO-RAREFIED
+OVA-IWRITE--SIR-SLOAN
+RAINFORESTCRUNCH-ETNA
+---OAK--NOMAN--ACT---
+ALAN-SIMONANDSCHUSTER
+HOIST-COT--TEARAT-OLA
+ANDERSEN-ALECTO--POST
+-GENIUSATWORK--VILLAS
+---SEE--ION--SUEDE---
+PACED-UNCLETOMSCABIN-
+ALA--THIS--IREST--NOT
+LOIZEAUX-JULIAROBERTS
+-ERASURE-ELDER-RIVERA
+--OPERAS-DUELS-SPADER
+Time taken: 5.2651588916778564 seconds
+```
+
+
+| Category  | Words | Grid size | Time taken to solve (s) |
+|-----------|-------|-----------|-------------------------|
+| Easy      | 10    | 5 x 5     | 0.3663 s                |
+| Medium    | 65    | 14 x 14   | 0.9656 s                |
+| Difficult | 142   | 21 x 21   | 5.0272 s                |
+
+
+
+| Category | Words | Grid size | Time taken to solve (s) |
+|----------|-------|-----------|----------------------|
+| Medium1  | 57    | 14 x 14   | 0.647 s              |
+| Medium2  | 65    | 14 x 14   | 0.966 s              |
