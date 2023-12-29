@@ -18,6 +18,16 @@ _Unary constraints_ on each variable are given by the length of the word.
 Binary constraints arise from the overlap between neighboring variables. Overlap is represented as a pair of indices (i, j) indicating that the ith character of one variable must be the same as the jth character of another variable. All words must be different; the same word should not be repeated in the puzzle.
 ### Objective
 Find a satisfying assignment, i.e., a different word for each variable such that all unary and binary constraints are met.
-Approach
+
+### Approach
 _Enforce Node Consistency_: Ensure that every value in a variable’s domain satisfies its unary constraints (length). <br>
 _Enforce Arc Consistency (AC3)_: Ensure that binary constraints (overlaps) are satisfied. Backtracking: Use backtracking to explore possible assignments until a solution is found.
+
+## Literature Review
+_Solving Crossword Puzzles as Probabilistic Constraint Satisfaction_ by Noam M. Shazeer, Michael L. Littman, and Greg A. Keim is a paper that describes a formal model of constraint satisfaction with probabilistic preferences on variable values The authors define two natural optimization problems for this model: maximizing the probability of a correct solution and maximizing the number of correct words (variable values) in the solution. They provide an efficient iterative approximation for the latter based on dynamic programming and present very encouraging results on a collection of real and artificial crossword puzzles. Also the review _Crossword Puzzles and Constraint Satisfaction_ by James Connor, John Duchi, and Bruce Lo from Stanford University, describes how to solve crossword puzzles using a basic backtracking algorithm with a few modifications. The paper also investigates different constraint satisfaction problem (CSP) algorithms, including forward checking, dynamic variable ordering, conflict-directed backjumping, and arc consistency. The authors suggest that these algorithms make for significantly more efficient CSP solvers.
+
+## Software
+We will write this AI in python3, utilising standard libraries for representation and algorithms. The user interface will be a command-line-based interface for simplicity and compatibility.
+
+## Instructions on how to run your project
+
