@@ -111,3 +111,24 @@ Dick sometimes tells the truth, while Harry, the worst golfer, never does.
 
 ### Figure out who is who.
 Write your answer in a function named `golf`, and have it return a dictionary with keys that are string descriptions of a proposition symbol, and values that are the T/F value that you can infer about that proposition symbol.
+
+## How to run
+_**Note: Remember to put `proplogic.py` file inside the proplogic_sat directory before running**_
+### Sample Input
+```
+python3 proplogic.py
+```
+### Sample Output
+```
+Liars and Truth-tellers II 
+(False, False, True) 
+-------------------------
+Liars and Truth-tellers III 
+(True, False, False) 
+-------------------------
+Robbery and a Salt 
+{'Caterpillar stole the salt': True, 'Bill the Lizard stole the salt': False, 'Cheshire Cat stole the salt': False, 'Caterpillar is Truthful': False, 'Bill the Lizard is Truthful': False, 'Cheshire Cat is Truthful': True} 
+-------------------------
+An honest name 
+{'Tom is in 1st place': True, 'Tom is in 2nd place': False, 'Tom is in 3rd place': False, 'Harry is in 1st place': False, 'Harry is in 2nd place': True, 'Harry is in 3rd place': False, 'Dick is in 1st place': False, 'Dick is in 2nd place': False, 'Dick is in 3rd place': True}
+```
