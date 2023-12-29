@@ -30,7 +30,7 @@ p1 = MinimaxPlayer(WHITE, 4)
 that plays as white and has a search depth limit of 4 plies.
 
 ### Alpha-Beta Agent
-Finally, create an **AlphabetaPlayer** class that implements minimax search with alpha-beta pruning to decide its moves. Again, have the depth limit be set as a parameter when an object is created. It is possible that the only difference between results of Alpha-beta and Minimax will be the difference in time to arrive at a solution, but that means that it should be reasonable to run alpha-beta with a larger depth limit. I **strongly recommend** that you closely follow the book's algorithm or code when implementing alpha-beta pruning. It is a tricky algorithm.
+Finally, create an **AlphabetaPlayer** class that implements minimax search with alpha-beta pruning to decide its moves. Again, have the depth limit be set as a parameter when an object is created. It is possible that the only difference between results of Alpha-beta and Minimax will be the difference in time to arrive at a solution, but that means that it should be reasonable to run alpha-beta with a larger depth limit.
 
 ## Output and Submission
 Set up your code so that by default it plays your AlphabetaPlayer (with a reasonable depth limit that doesn't take too long) against RandomPlayer, then swaps colors and does it again.
