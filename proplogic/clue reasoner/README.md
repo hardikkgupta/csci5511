@@ -41,29 +41,23 @@ The code is written as a class that is initialized with the ordering of the play
 The job of the methods `add_hand`, `suggest`, and `accuse` is to handle things that happen during the game and they will be described later.
 
 ## Your Task
-Download the clue_hw.zip Download clue_hw.zipfile and unzip it. You will do all your work in the clue_game_reasoner.py module.
-
+Download the clue_hw.zip Download clue_hw.zip file and unzip it. You will do all your work in the clue_game_reasoner.py module.
 Add code to the places where there is a comment "TO BE IMPLEMENTED AS AN EXERCISE".
-
 Here are those places and what you need to add:
 
- 
-
-Constructor (the __init__ method)
+## Constructor (the __init__ method)
 Add to the Knowledge Base (KB) the logic that encodes the rules of the game:
+- Each card is in at least one location (this is done for you as an example)
+- Each card is in at most one location
+- At least one card of each category (Suspects, Weapons, Rooms) is in the Case File
+- At most one card of each category is in the Case File 
 
-Each card is in at least one location (this is done for you as an example)
-Each card is in at most one location
-At least one card of each category (Suspects, Weapons, Rooms) is in the Case File
-At most one card of each category is in the Case File
- 
-
-add_hand
+## ```add_hand``` <br>
 This method adds to the KB the information about the cards in your hand. (If they are in your hand, you know where they are.)
 
  
 
-suggest
+## ```suggest``` <br>
 This method is the most complex and the interesting part of the game. A "suggestion" in Clue is when you say "I suggest that a particular character is guilty of the crime in a particular room with a particular weapon." According to the rules, when you make a suggestion, the other players will attempt to refute the suggestion. Starting with the player on your left, and going around the table until refuted, the other players must refute the suggestion if they can (by revealing a card from their hand to the suggester) or pass if they cannot. Once a suggestion has been refuted, then no other player needs to refute it.
 
 So what information is gained? Well, clearly if I made a suggestion that Professor Plum did it with the Candlestick in the Ballroom, and the player to my left (Colonel Mustard) shows me the Ballroom card, then I can add the knowledge that the Ballroom card is in Colonel Mustard's hand.
